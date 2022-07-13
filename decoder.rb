@@ -1,11 +1,11 @@
-def morse_code_hash 
+def morse_code_hash
   { A: '.-', B: '-...', C: '-.-.', D: '-..', E: '.', F: '..-.', G: '--.', H: '....',
     I: '..', J: '.---', K: '-.-', L: '.-..', M: '--', N: '-.', O: '---', P: '.--.',
-    Q: '--.-', R: '.-.', S: '...', T: '-', U: '..-', V: '...-', W: '.--', X: '-..-', Y: '-.--', Z: '--..'}
+    Q: '--.-', R: '.-.', S: '...', T: '-', U: '..-', V: '...-', W: '.--', X: '-..-', Y: '-.--', Z: '--..' }
 end
 
 def char_decode(string)
-  morse_code_hash.each do |key,value|
+  morse_code_hash.each do |key, value|
     if value == string
       character = key.to_s
       return character
